@@ -10,3 +10,12 @@ function applyColor(value) {
 document.getElementById('fontColorPicker').addEventListener('input', function(event) {
     applyColor(event.target.value);
 });
+function applyAlignment(alignment) {
+    const textArea = document.getElementById('text-area');
+
+    if (alignment === 'justify') {
+        textArea.style.textAlign = 'justify';
+    } else {
+        textArea.style.textAlign = alignment;
+    }
+}
