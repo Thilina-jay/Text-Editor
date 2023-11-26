@@ -19,3 +19,20 @@ function applyAlignment(alignment) {
         textArea.style.textAlign = alignment;
     }
 }
+const textArea = document.getElementById('text-area');
+
+textArea.addEventListener('input', function () {
+    saveState();
+});
+
+function saveState() {
+    document.execCommand('defaultParagraphSeparator', false, 'p');
+}
+
+function undo() {
+    document.execCommand('undo', false, null);
+}
+
+function redo() {
+    document.execCommand('redo', false, null);
+}
