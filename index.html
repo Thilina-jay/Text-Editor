@@ -20,6 +20,12 @@
         <button id="italic" onclick="applyStyle('italic')"><img src="Resources/italic-regular-24.png" alt="i"></button>
 
         <input type="color" id="fontColor" onchange="applyColor(this.value)">
+
+        <button id="alignLeft" onclick="applyAlignment('left')"><img src="Resources/align-left-regular-24.png" alt="lFT"></button>
+        <button id="alignRight" onclick="applyAlignment('right')"><img src="Resources/align-right-regular-24.png" alt="RGT"></button>
+        <button id="alignCenter" onclick="applyAlignment('center')"><img src="Resources/align-middle-regular-24.png" alt="CEN"></button>
+        <button id="alignJustify" onclick="applyAlignment('justify')"><img src="Resources/align-justify-regular-24.png" alt="JUS"></button>
+            
     </div>
     <!-- Text area -->
     <div id="text-area" contenteditable="true"></div>
